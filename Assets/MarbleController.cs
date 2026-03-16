@@ -3,11 +3,27 @@ using UnityEngine.SceneManagement;
 
 public class MarbleController : MonoBehaviour
 {
+    float fallThreshold = -5f;
+
+    void RestartScene()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
+    }
+
     void Update()
     {
-        if (transform.position.y < -5)
+        if (transform.position.y < fallThreshold)
         {
-            SceneManager.LoadScene("GameScene_0");
+            RestartScene();
         }
+    }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        Debug.Log("ゴールしました");
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        Debug.Log(nextSceneIndex);
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }
