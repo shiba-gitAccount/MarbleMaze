@@ -2833,6 +2833,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1282902034}
     m_Modifications:
+    - target: {fileID: 1175351136937177467, guid: afda0c21789d52b4a9a01558ae842366, type: 3}
+      propertyPath: barMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f8963ff5c10602849aa7e01f4843c476, type: 2}
     - target: {fileID: 1933901620764046614, guid: afda0c21789d52b4a9a01558ae842366, type: 3}
       propertyPath: m_Name
       value: Flag
