@@ -1,18 +1,28 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class FlagController : MonoBehaviour
 {
+    public Material barMaterial;
+    public Material clothMaterial;
+    Renderer[] childRenderers;
+
     void Start()
     {
-        Collider[] childColliders = GetComponentsInChildren<Collider>();
+        childRenderers = GetComponentsInChildren<Renderer>();
     }
 
-    void OnTriggerEnter(Collider collision)
+    public void ColorChange()
     {
-        Debug.Log("ゴールしました");
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        Debug.Log(nextSceneIndex);
-        SceneManager.LoadScene(nextSceneIndex);
+        foreach (Renderer ren in childRenderers)
+        {
+            if (ren.gameObject.name == "Cloth")
+            {
+                ren.material = clothMaterial;
+            }
+            else
+            {
+                ren.material = barMaterial;
+            }
+        }
     }
 }
