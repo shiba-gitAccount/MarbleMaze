@@ -7,7 +7,11 @@
 マウスでステージを傾け、重力を操ってゴールを目指す物理パズルゲームです。
 
 ## 🎮 プレイ動画
-https://github.com/user-attachments/assets/ce1a0100-c535-4ad9-9ada-965382c636b
+
+
+https://github.com/user-attachments/assets/87743750-157a-4869-81d8-c12f19d32ef1
+
+
 ## 🛠 作品概要
 - **開発期間**: 約2ヶ月（実制作日数：約3日）
 - **操作方法**: マウスドラッグによるステージの傾斜操作
