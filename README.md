@@ -2,7 +2,7 @@
 
 
 
-# Gravity Maze Puzzle
+# Marble Maze
 
 マウスでステージを傾け、重力を操ってゴールを目指す物理パズルゲームです。
 
